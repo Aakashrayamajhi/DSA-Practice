@@ -110,3 +110,80 @@ MORE THAN 9K   20% */
 //     let total = amount - discount_amount
 //     console.log("Total Amount:", total)
 // }
+
+
+// //========= TRICKY ELECTRICITY BILLING QUESTION ==========
+
+// /* UNIT      PRICE
+// UP TO 100    RS 4.2/UNIT
+// 101 - 200    RS 6/UNIT
+// 201 - 400    RS 8/UNIT
+// MORE THAN 400 THEN RS 13/UNIT */
+
+// let unit = Number(prompt("enter your unit"))
+// let amount = 0
+
+// if(isNaN(unit)){
+//     console.log("invalid input")
+
+// }else if(unit>=0 && unit<=100){
+//      amount = unit * 4.2
+   
+// }else if (unit <= 200) {
+//     amount = 100 * 4.2 + (unit - 100) * 6;
+// }
+// else if (unit <= 400) {
+//     amount = 100 * 4.2 + 100 * 6 + (unit - 200) * 8;
+// }
+// else {
+//     amount = 100 * 4.2 + 100 * 6 + 200 * 8 + (unit - 400) * 13;
+// }
+
+// console.log("price:", amount)
+
+
+// ======= ATM MONEY WITHDRAW SYSTEM ======
+
+let amount = Number(prompt("Enter your Amount to Withdraw:"))
+
+if(isNaN(amount)){
+    console.log("invalid input")
+}
+
+if(amount >= 1000){
+    console.log("Rs 1000 notes:", Math.trunc(amount/1000))
+amount = amount % 1000
+}
+
+if(amount >= 500){
+       console.log("Rs 500 notes:", Math.trunc(amount/500))
+amount = amount % 500
+}
+if(amount >= 100){
+       console.log("Rs 100 notes:", Math.trunc(amount/100))
+amount = amount % 100
+}
+if(amount >= 50){
+       console.log("Rs 50 notes:", Math.trunc(amount/50))
+amount = amount % 50
+}
+if(amount >= 20){
+       console.log("Rs 20 notes:", Math.trunc(amount/20))
+amount = amount % 20
+}
+if(amount >= 10){
+       console.log("Rs 10 notes:", Math.trunc(amount/10))
+amount = amount % 10
+}
+if(amount >= 5){
+       console.log("Rs 5 notes:", Math.trunc(amount/5))
+amount = amount % 5
+}
+if(amount >= 2){
+       console.log("Rs 2 coins:", Math.trunc(amount/2))
+amount = amount % 2
+}
+if(amount >= 1){
+       console.log("Rs 1 coin:", Math.trunc(amount/1))
+amount = amount % 1
+}
