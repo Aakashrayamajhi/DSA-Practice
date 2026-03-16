@@ -42,13 +42,30 @@
 // // important - index.js:40 Uncaught ReferenceError: Cannot access 'b' before initialization, why? because after b = 100 thera was no semicolons , this goes into a TDZ ie,temporal dead zone , this usualy happens with let and cosnt . if you put semicolon after b then it works 
 
 
-// lets solve qn without using loop and its static approach , 
+// // lets solve qn without using loop and its static approach , 
 
-let a = 1234 // output should be - 1+2+3+4 = 11
-let b = a%10  // 4
-let c = Math.floor(a/10) % 10 // first a/10 and using math.floor() it give you quotient and applying % 10 gives you the remainder of that quotient ,ie- 3 so c = 3
-let d = Math.floor(a/100) 
-let e = d % 10 // 2
-let f = Math.floor(d/10) // 1
-let sum = f+e+c+b
-console.log(sum)
+// let a = 1234 // output should be - 1+2+3+4 = 11
+// let b = a%10  // 4
+// let c = Math.floor(a/10) % 10 // first a/10 and using math.floor() it give you quotient and applying % 10 gives you the remainder of that quotient ,ie- 3 so c = 3
+// let d = Math.floor(a/100) 
+// let e = d % 10 // 2
+// let f = Math.floor(d/10) // 1
+// let sum = f+e+c+b
+// console.log(sum) //10
+// // just a practice those kind of problem are easily solved using loops.
+
+// // =========PLAYING WITH UNARY OPERATORS========
+
+// let a = 10
+// // a++
+// console.log(a++) // ->10
+
+// let b = ++a + ++a
+// console.log(b) // ->25
+
+
+// // =========PLAYING WITH MATH FUNCTION ====== 
+
+// let a = 1000000
+
+// console.log(Math.max(Math.trunc(Math.random() * a) , Math.trunc(Math.random() * a) , Math.trunc(Math.random() * a)) )
