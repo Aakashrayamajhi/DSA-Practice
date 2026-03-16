@@ -69,3 +69,44 @@
 // let a = 1000000
 
 // console.log(Math.max(Math.trunc(Math.random() * a) , Math.trunc(Math.random() * a) , Math.trunc(Math.random() * a)) )
+
+
+// //========== TAKING INUPUT AGE AND IDENTIFYING VALID VOTERS ==========
+
+// let age = Number(prompt("Enter your age")) // if you enter number then it converted into string also , if you entered string instead of age then , Number() takes it and result-  NaN
+
+// if(isNaN(age)){
+//     console.log("invalid input")
+// }else if( age >=18){
+//     console.log("you are a valid voter")
+// }else{
+//     console.log("sorry you cannot vote");
+    
+// }
+
+// ========QUESTION==========
+/* AMOUNT     DIS %
+  0-5000       0%
+5001 - 7000    5%
+7001 - 9000    10%
+MORE THAN 9K   20% */
+
+// let amount = Number(prompt("Enter total Amount"))
+
+// if(isNaN(amount)){
+//     console.log("invalid input")
+// } else if(amount >= 0 && amount <= 5000){
+//     console.log("Total Amount:", amount)
+// }else if(amount > 5000 && amount <= 7000){
+//     let discount_amount = amount * 0.05
+//     let total = amount - discount_amount
+//     console.log("Total Amount:", total)
+// }else if(amount > 7000 && amount <= 9000){
+//     let discount_amount = amount * 0.10
+//     let total = amount - discount_amount
+//     console.log("Total Amount:", total)
+// }else if(amount > 9000){
+//     let discount_amount = amount * 0.20
+//     let total = amount - discount_amount
+//     console.log("Total Amount:", total)
+// }
