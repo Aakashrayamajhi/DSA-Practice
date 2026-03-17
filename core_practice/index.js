@@ -260,7 +260,7 @@ MORE THAN 9K   20% */
 //                             console.log( i )
 //                      }
 //               }
-              
+
 //        }
 
 // }
@@ -306,7 +306,7 @@ MORE THAN 9K   20% */
 //               } else {
 //                      console.log("not a prime number")
 //               }
-             
+
 //        }
 
 // }
@@ -329,3 +329,41 @@ MORE THAN 9K   20% */
 
 //     console.log(isPrime ? "Yes, prime number" : "Not a prime number");
 // }
+
+// //==========while loop ==========
+
+// let word = prompt("enter hey to close:")
+
+// while(word !== "hey"){
+//   word = prompt("enter gay to close:")
+
+// }
+
+// ======= sum of digit using while loop=====
+
+// let num = Number(prompt("enter digit"))
+// let sum = 0
+// let remainder = 0
+// while (num > 0) {
+//   remainder = num % 10
+//   sum += remainder
+//   num = Math.trunc(num / 10)
+  
+// }
+
+// console.log(sum)
+
+
+//========== reverse of number ==========
+
+let num = Number(prompt("enter digit"))
+let reverse = []
+
+while (num > 0) {
+ let remainder = num % 10
+  reverse.push(remainder)
+  num = Math.trunc(num / 10)
+  
+}
+
+console.log(reverse)
