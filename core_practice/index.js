@@ -81,7 +81,7 @@
 //     console.log("you are a valid voter")
 // }else{
 //     console.log("sorry you cannot vote");
-    
+
 // }
 
 // ========QUESTION==========
@@ -128,7 +128,7 @@ MORE THAN 9K   20% */
 
 // }else if(unit>=0 && unit<=100){
 //      amount = unit * 4.2
-   
+
 // }else if (unit <= 200) {
 //     amount = 100 * 4.2 + (unit - 100) * 6;
 // }
@@ -142,48 +142,103 @@ MORE THAN 9K   20% */
 // console.log("price:", amount)
 
 
-// ======= ATM MONEY WITHDRAW SYSTEM ======
+// // ======= ATM MONEY WITHDRAW SYSTEM ======
 
-let amount = Number(prompt("Enter your Amount to Withdraw:"))
+// let amount = Number(prompt("Enter your Amount to Withdraw:"))
 
-if(isNaN(amount)){
-    console.log("invalid input")
-}
+// if(isNaN(amount)){
+//     console.log("invalid input")
+// }
 
-if(amount >= 1000){
-    console.log("Rs 1000 notes:", Math.trunc(amount/1000))
-amount = amount % 1000
-}
+// if(amount >= 1000){
+//     console.log("Rs 1000 notes:", Math.trunc(amount/1000))
+// amount = amount % 1000
+// }
 
-if(amount >= 500){
-       console.log("Rs 500 notes:", Math.trunc(amount/500))
-amount = amount % 500
-}
-if(amount >= 100){
-       console.log("Rs 100 notes:", Math.trunc(amount/100))
-amount = amount % 100
-}
-if(amount >= 50){
-       console.log("Rs 50 notes:", Math.trunc(amount/50))
-amount = amount % 50
-}
-if(amount >= 20){
-       console.log("Rs 20 notes:", Math.trunc(amount/20))
-amount = amount % 20
-}
-if(amount >= 10){
-       console.log("Rs 10 notes:", Math.trunc(amount/10))
-amount = amount % 10
-}
-if(amount >= 5){
-       console.log("Rs 5 notes:", Math.trunc(amount/5))
-amount = amount % 5
-}
-if(amount >= 2){
-       console.log("Rs 2 coins:", Math.trunc(amount/2))
-amount = amount % 2
-}
-if(amount >= 1){
-       console.log("Rs 1 coin:", Math.trunc(amount/1))
-amount = amount % 1
-}
+// if(amount >= 500){
+//        console.log("Rs 500 notes:", Math.trunc(amount/500))
+// amount = amount % 500
+// }
+// if(amount >= 100){
+//        console.log("Rs 100 notes:", Math.trunc(amount/100))
+// amount = amount % 100
+// }
+// if(amount >= 50){
+//        console.log("Rs 50 notes:", Math.trunc(amount/50))
+// amount = amount % 50
+// }
+// if(amount >= 20){
+//        console.log("Rs 20 notes:", Math.trunc(amount/20))
+// amount = amount % 20
+// }
+// if(amount >= 10){
+//        console.log("Rs 10 notes:", Math.trunc(amount/10))
+// amount = amount % 10
+// }
+// if(amount >= 5){
+//        console.log("Rs 5 notes:", Math.trunc(amount/5))
+// amount = amount % 5
+// }
+// if(amount >= 2){
+//        console.log("Rs 2 coins:", Math.trunc(amount/2))
+// amount = amount % 2
+// }
+// if(amount >= 1){
+//        console.log("Rs 1 coin:", Math.trunc(amount/1))
+// amount = amount % 1
+// }
+
+// // ============ for loop ==========
+
+// for(;;){
+//        console.log("valid")
+// } // this is an valid loop and it run as an infinit loop. if we use two semicolons ; ; inside forloop then codo became valid it dosent matter , start , end and increaments are given or not , lets take another example also for this
+
+// for( let i = 1; ;){
+//        console.log("still valid and it runs infinite");  
+// } // another example
+
+// for(let i = 1 ; i<10 ;){
+//        console.log("still valid and runs infinite");
+
+// }
+
+// // ===== sum of n natural numbers =======
+
+// let n = Number(prompt("enter any number"))
+// if(isNaN(n) || n<0){
+//        console.log("invalid input");
+
+// }
+
+
+// let sum  = 0
+
+// for( let i = 1; i<=n ; i++){
+//   sum += i
+// }
+// console.log("sum of n natural numbers:", sum);
+
+
+// ====== factorial of n iee:   5! = 5*4*3*2*1 , same as sum of n natural number , just we have to do multiply instead of sum ,  ie : factorial *= i
+
+// let n = Number(prompt("enter any number"))
+// let fact = 1 // 0 batw start garnu hidaina reason 0 * any number = 0
+
+// if (isNaN(n)) {
+//        console.log("invalid input");
+
+// } else {
+//        if (n < 0) {
+// console.log("you must provide positive number")
+//        } else {
+//               for (let i = 1; i <= n; i++) {
+//                      fact *= i
+//               }
+//               console.log("factorial of n natural numbers:", fact);
+//        }
+
+// }
+
+
+
