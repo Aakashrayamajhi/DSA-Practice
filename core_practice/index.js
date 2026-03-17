@@ -241,4 +241,91 @@ MORE THAN 9K   20% */
 // }
 
 
+// // ===== factor of n number ===========
 
+
+//  let n = Number(prompt("enter any number"))
+// let num = 0
+
+// if (isNaN(n)) {
+//        console.log("invalid input");
+
+// } else {
+//        if (n < 0) {
+// console.log("you must provide positive number")
+//        } else {
+//               for (let i = 1; i <= n; i++) {
+//                      num = n/i
+//                      if(Number.isInteger(num)){
+//                             console.log( i )
+//                      }
+//               }
+              
+//        }
+
+// }
+
+// //better version
+
+// for (let i = 1; i <= n; i++) {
+//     if (n % i === 0) {  // remainder 0 means its an integer value 
+//         console.log(i);
+//     }
+// } 
+// //even more optimized version 
+
+// for (let i = 1; i <= Math.sqrt(n); i++) {
+//     if (n % i === 0) {
+//         console.log(i);
+//         if (i !== n / i) {
+//             console.log(n / i);
+//         }
+//     }
+// }
+
+
+// // ================= prime numbner ===========
+
+// let n = Number(prompt("enter any number"))
+// let count = 0
+
+// if (isNaN(n)) {
+//        console.log("invalid input");
+
+// } else {
+//        if (n <= 1) {
+// console.log("you must provide positive number")
+//        } else {
+//               for (let i = 1; i <= n; i++) {
+//                      if(n%i == 0){
+//                             count++  
+//                      }
+//               }
+//               if(count == 2){
+//  console.log("yes this is a prime number:", n);
+//               } else {
+//                      console.log("not a prime number")
+//               }
+             
+//        }
+
+// }
+
+// //optimized
+
+// let n = Number(prompt("Enter a number"));
+
+// if (isNaN(n) || n <= 1) {
+//     console.log("Not a prime number");
+// } else {
+//     let isPrime = true;
+
+//     for (let i = 2; i <= Math.sqrt(n); i++) {
+//         if (n % i === 0) {
+//             isPrime = false;
+//             break; // no need to check further
+//         }
+//     }
+
+//     console.log(isPrime ? "Yes, prime number" : "Not a prime number");
+// }
