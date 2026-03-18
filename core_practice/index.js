@@ -390,28 +390,45 @@ MORE THAN 9K   20% */
 //  SUPPOSE NUM = 123 
 //  IF 123 = 1! + 2! + 3!  THEN -> STRONG NUMBER
 
-let num = Number(prompt("enter a valid number :"))
-if(isNaN(num)){
-  console.log("invalid input")
-}else if( num <= 0){
-  console.log("enter some valid number")
-}else{
-  let number = num
-  let strongNumber = 0
+// let num = Number(prompt("enter a valid number :"))
+// if(isNaN(num)){
+//   console.log("invalid input")
+// }else if( num <= 0){
+//   console.log("enter some valid number")
+// }else{
+//   let number = num
+//   let strongNumber = 0
 
-  while (number > 0){
-    let remainder = number%10
-    let fact = 1
-    for(let j = 1 ; j<=remainder ; j++){
-      fact *= j
-    }
-    strongNumber += fact
-    number = Math.trunc(number/10)
-  }
-  if(strongNumber === num){
- console.log("STRONG NUMBER IS:", strongNumber)
-  }else{
-    console.log("NOT a STRONG NUMBER")
-  }
+//   while (number > 0){
+//     let remainder = number%10
+//     let fact = 1
+//     for(let j = 1 ; j<=remainder ; j++){
+//       fact *= j
+//     }
+//     strongNumber += fact
+//     number = Math.trunc(number/10)
+//   }
+//   if(strongNumber === num){
+//  console.log("STRONG NUMBER IS:", strongNumber)
+//   }else{
+//     console.log("NOT a STRONG NUMBER")
+//   }
  
-}
+// }
+
+// //======== do while =========
+
+// let random = Math.trunc(Math.random()*10+1)
+// let num = Number(prompt("guess the number between 1-10:"))
+// console.log(num)
+// if(isNaN(num)){
+//   console.log("invalid input")
+// }
+
+// do{
+//   num = Number(prompt("guess the number between 1-10:"))
+// }while(num !== random)
+  
+//   if(num === random){
+//     console.log("correct guess",num)
+//   }
