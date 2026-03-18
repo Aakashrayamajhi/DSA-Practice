@@ -354,16 +354,64 @@ MORE THAN 9K   20% */
 // console.log(sum)
 
 
-//========== reverse of number ==========
+// //========== reverse of number ==========
 
-let num = Number(prompt("enter digit"))
-let reverse = []
+// let num = Number(prompt("enter digit"))
+// let reverse = []
 
-while (num > 0) {
- let remainder = num % 10
-  reverse.push(remainder)
-  num = Math.trunc(num / 10)
+// while (num > 0) {
+//  let remainder = num % 10
+//   reverse.push(remainder)
+//   num = Math.trunc(num / 10)
   
-}
+// }
 
-console.log(reverse)
+// console.log(reverse)
+
+// //=======reverse of  digit ======
+
+// let num = Number(prompt("enter a valid digit:"))
+// if(isNaN(num)){
+//   console.log("invalid input")
+// }
+
+// let reverse = 0
+
+// while ( num > 0){
+// let remainder = num%10
+// reverse = reverse * 10 + remainder
+// num = Math.trunc(num/10)
+
+// }
+
+// console.log(reverse)
+
+// ================ STRONG NUMBER ========
+//  SUPPOSE NUM = 123 
+//  IF 123 = 1! + 2! + 3!  THEN -> STRONG NUMBER
+
+let num = Number(prompt("enter a valid number :"))
+if(isNaN(num)){
+  console.log("invalid input")
+}else if( num <= 0){
+  console.log("enter some valid number")
+}else{
+  let number = num
+  let strongNumber = 0
+
+  while (number > 0){
+    let remainder = number%10
+    let fact = 1
+    for(let j = 1 ; j<=remainder ; j++){
+      fact *= j
+    }
+    strongNumber += fact
+    number = Math.trunc(number/10)
+  }
+  if(strongNumber === num){
+ console.log("STRONG NUMBER IS:", strongNumber)
+  }else{
+    console.log("NOT a STRONG NUMBER")
+  }
+ 
+}
