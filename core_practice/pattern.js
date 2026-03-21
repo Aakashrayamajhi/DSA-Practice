@@ -172,3 +172,31 @@ const PromptSync = require("prompt-sync")
 // // ***
 // // **
 // // *
+
+
+// let prompt = require("prompt-sync")()
+// let n = Number(prompt("enter a number"))
+
+// for (let i = 1; i <= n; i++) {
+//     let row = "";
+
+//     // spaces
+//     for (let s = 1; s <= n - i; s++) {
+//         row += " ";
+//     }
+
+//     // stars
+//     for (let j = 1; j <= i; j++) {
+//         row += "*";
+//     }
+
+//     console.log(row);
+// }
+
+// // enter a number5
+// //     *
+// //     *
+// //    **
+// //   ***
+// //  ****
+// // *****
