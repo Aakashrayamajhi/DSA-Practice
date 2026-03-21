@@ -1,6 +1,8 @@
 // let prompt = require('prompt-sync')()
 // let a = Number(prompt("enter a a number"))
 
+const PromptSync = require("prompt-sync")
+
 // for(let i = 1 ; i <= a ; i++){
 // for(let j = 1 ; j <=a; j++){
 // process.stdout.write('# ')
@@ -112,4 +114,61 @@
 // // ****
 // // *****
 // // *
+// // *
+
+// let prompt = require("prompt-sync")()
+// let n = prompt("enter a number")
+
+// let row = ""
+// for (let i = 1; i <= n; i++) {
+
+// row += i
+//     console.log(row)
+
+// }
+
+// // 1
+// // 12
+// // 123
+// // 1234
+// // 12345
+// // 123456
+
+
+
+
+// let prompt = require("prompt-sync")()
+// let n = prompt("enter a number")
+
+// let row = ""
+// let arr = ["A", "B", "C", "D", "E", "F"]
+// for (let i = 0; i <= n; i++) {
+
+//     row += arr[i]
+//     console.log(row)
+
+// }
+
+// // A
+// // AB
+// // ABC
+// // ABCD
+// // ABCDE
+
+
+// let prompt = require("prompt-sync")()
+// let n = Number(prompt("enter a number"))
+
+// for (let i = 1; i <= n ; i++) {
+// let row = ""
+//     for(let j = n ; j>=i; j--){
+//         row +="*"
+//     }
+//     console.log(row)
+
+// }
+
+// // ****
+// // ***
+// // **
 // // *
