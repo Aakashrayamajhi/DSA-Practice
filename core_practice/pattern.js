@@ -1,7 +1,7 @@
 // let prompt = require('prompt-sync')()
 // let a = Number(prompt("enter a a number"))
 
-const PromptSync = require("prompt-sync")
+// const PromptSync = require("prompt-sync")
 
 // for(let i = 1 ; i <= a ; i++){
 // for(let j = 1 ; j <=a; j++){
@@ -200,3 +200,95 @@ const PromptSync = require("prompt-sync")
 // //   ***
 // //  ****
 // // *****
+
+// let prompt = require('prompt-sync')()
+// let n = Number(prompt("enter a number: "))
+
+// if (isNaN(n) || n <= 0) {
+//     console.log("n is not a valid number. Please enter a number greater than 0");
+// } else {
+//     for (let i = 1; i <= n; i++) {
+//         let row = ""
+
+//         for (let j = 1; j <= n - i; j++) {
+//             row += "#"
+//         }
+
+//         for (let k = 1; k <= i; k++) {
+//             row += "*"
+//         }
+
+//         console.log(row)
+//     }
+// }
+
+// // enter a number: 5
+// // ####*
+// // ###**
+// // ##***
+// // #****
+// // *****
+
+
+// let prompt = require('prompt-sync')()
+// let n = Number(prompt("enter a number: "))
+
+// if (isNaN(n) || n <= 0) {
+//     console.log("n is not a valid number. Please enter a number greater than 0");
+// } else {
+//     for(let i = 1; i<=n; i++){
+//         for(let j = 1; j<=n ; j++){
+//             if( (i+j == n+1) || (i == j)){
+//                 process.stdout.write("*")
+//             }else{
+//                 process.stdout.write(" ")
+//             }
+//         }
+//         console.log()
+//     }
+// }
+
+
+// // enter a number: 5
+// // *   *
+// //  * * 
+// //   *  
+// //  * * 
+// // *   *
+
+
+// let n = 5
+
+// for (let i = 1; i <= n; i++) {
+//     let spaces = " ".repeat(n - i)
+//     let stars = "*".repeat(2 * i - 1)
+//     console.log(spaces + stars)
+// }
+
+// //     *
+// //    ***
+// //   *****
+// //  *******
+// // *********
+
+
+// let prompt = require("prompt-sync")()
+// let n = Number(prompt("enter a number"))
+
+// for( let i = 1 ; i<=n ; i++){
+//     for(j=1 ; j<=2*n ; j++ ){
+//         if( (i==j) || (i+j == 2*n)){
+//             process.stdout.write("* ")
+//         }else{
+//             process.stdout.write(" ")
+//         }
+//     }
+//     console.log()
+// }
+
+// // enter a number5
+// // *        *  
+// //  *      *   
+// //   *    *    
+// //    *  *     
+// //     *
