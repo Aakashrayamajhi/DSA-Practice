@@ -346,18 +346,77 @@
 // console.log("max:", max)
 // // console.log("min:", min)
 
-// let arr = [ 1, 3 ,5 ,2 ,66 ,23 ,2 , 77 , 110]
-// let max = Math.max(arr[0], arr[1])
-// let secondmax = Math.min(arr[0], arr[1])
+// 
 
-// for(let i = 2 ; i < arr.length ; i++){
-//     if(arr[i]>max){
-//         secondmax = max
-//         max = arr[i]
-//     }else if(arr[i]>secondmax && secondmax !== max){
-//         secondmax = arr[i]
-//     }
+// let arr = [1,2,3,4,4,23423,67,5,5,67,78]
+// console.log("max:" ,Math.max(...arr), "min:" , Math.min(...arr))
+
+// let arr = [1,2,3,4,4,23423,67,5,5,67,78]
+// let temp = []
+
+
+// for (let i = 0; i < arr.length; i++) {
+//   temp.unshift(arr[i]);
 // }
 
-// console.log("max:", max)
-// console.log("secondmax:", secondmax)
+// console.log(temp)
+// console.log(JSON.stringify(temp));
+
+// let arr = [0,1,1,0,1,0,1,0,1]
+
+// let j = arr[0]
+
+
+// for( let i = 0; i < arr.length ;  i++){
+//     if(i && j === 0){
+//         i++
+//         j++
+//     }
+//     if(i === 1){
+//         i++
+//     }
+//     if(i === 0 && j === 1){
+//         [arr[i] , arr[j]] = [arr[j], arr[i]]
+//         j++
+//     }
+    
+// }
+// console.log(arr)
+
+
+// let arr = [1,2,3,4,3,2,1]
+// let i = 0 ;
+// let j = arr.length-1
+
+// while(i < j){
+//     if( arr[i] == arr[j]){
+ 
+//     }else{
+//         console.log("not a palindrom")
+//         break;
+//     }
+//     i++
+//     j--
+// }
+
+// console.log("palindrom")
+
+// let arr = [1,2,3,4,3,2,1];
+// let i = 0;
+// let j = arr.length - 1;
+// let isPalindrome = true; // assume it is a palindrome initially
+
+// while(i < j){
+//     if(arr[i] != arr[j]){
+//         isPalindrome = false; // found mismatch
+//         break; // no need to check further
+//     }
+//     i++;
+//     j--;
+// }
+
+// if(isPalindrome){
+//     console.log("palindrome");
+// } else {
+//     console.log("not a palindrome");
+// }
