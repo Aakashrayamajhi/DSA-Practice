@@ -331,7 +331,7 @@
 // for (let i = 1; i < arr.length ; i++){
 //     if( max > arr[i]){
 //         max ;
-        
+
 //     }else{
 //         max = arr[i]
 //     }
@@ -379,7 +379,7 @@
 //         [arr[i] , arr[j]] = [arr[j], arr[i]]
 //         j++
 //     }
-    
+
 // }
 // console.log(arr)
 
@@ -390,7 +390,7 @@
 
 // while(i < j){
 //     if( arr[i] == arr[j]){
- 
+
 //     }else{
 //         console.log("not a palindrom")
 //         break;
@@ -439,3 +439,33 @@
 // }
 
 // console.log("most frequently availabe number is ", candidate , "and count is ", maxcount)
+
+
+// let arr = [1, -2, -3, 4, 5]
+// let maxsum = 0
+
+// for (let i = 0; i < arr.length; i++) {
+//     let sum = 0
+//     for (let j = 0; j < arr.length; j++) {
+//         if (arr[i] != arr[j]) {
+//             sum += arr[j]
+//         }
+//     }
+//     console.log(sum)
+//     if (sum > maxsum) {
+//         maxsum = sum
+//     }
+// }
+
+// console.log("maxsum after deleting:", maxsum)
+
+
+let arr = [1,2,3,4,5]
+let copy = arr[arr.length-1]
+
+for(let i = arr.length -1 ; i > 0 ; i--){
+  arr[i] = arr[i-1]
+}
+arr[0] = copy
+
+console.log(arr)
