@@ -316,8 +316,48 @@
 
 
 
-console.log(a)
- a = 5
-console.log(a)
-var a
-console.log(a)
+// console.log(a)
+//  a = 5
+// console.log(a)
+// var a
+// console.log(a)
+
+
+// let arr = [12,3,4,66,8,990,43]
+
+// let max = min = arr[0]
+
+
+// for (let i = 1; i < arr.length ; i++){
+//     if( max > arr[i]){
+//         max ;
+        
+//     }else{
+//         max = arr[i]
+//     }
+
+//     if(min < arr[i]){
+//         min;
+//     }else{
+//         min = arr[i]
+//     }
+// }
+
+// console.log("max:", max)
+// // console.log("min:", min)
+
+// let arr = [ 1, 3 ,5 ,2 ,66 ,23 ,2 , 77 , 110]
+// let max = Math.max(arr[0], arr[1])
+// let secondmax = Math.min(arr[0], arr[1])
+
+// for(let i = 2 ; i < arr.length ; i++){
+//     if(arr[i]>max){
+//         secondmax = max
+//         max = arr[i]
+//     }else if(arr[i]>secondmax && secondmax !== max){
+//         secondmax = arr[i]
+//     }
+// }
+
+// console.log("max:", max)
+// console.log("secondmax:", secondmax)
