@@ -472,20 +472,38 @@
 
 
 
-let arr = [1,2,3,4,5]
+// let arr = [1,2,3,4,5]
 
 
-let prompt = require('prompt-sync')()
-let k = Number(prompt("enter a number:"))
+// let prompt = require('prompt-sync')()
+// let k = Number(prompt("enter a number:"))
+// k = k % arr.length
+// for(let i = 1; i<=k ; i++){
+//   let copy = arr[0]
+//   for(let j = 0 ; j < arr.length-1; j++){
+//   arr[j] = arr[j+1]
+//   }
+//   arr[arr.length-1] = copy
+//   console.log("copy:", copy)
 
-for(let i = 1; i<=k ; i++){
-  let copy = arr[0]
-  for(let j = 0 ; j < arr.length-1; j++){
-  arr[j] = arr[j+1]
-  }
-  arr[arr.length-1] = copy
-  console.log("copy:", copy)
+// }
 
-}
+// console.log("arr:", arr)
 
-console.log("arr:", arr)
+//remove duplicate from the sorted array
+
+// let arr = [1,1, 2, 3, 4, 4, 4, 4, 4, 5,5]
+// let dup = arr[0]
+
+// for (let i = 1; i < arr.length; i++) {
+//   for (let j = i; j < arr.length; j++) {
+//     if (dup == arr[j]) {
+//       console.log("duplicate number is :", dup)
+//       arr.splice(arr[j], j)
+//       console.log("after removing:", arr)
+//     }
+//   }
+//   dup = arr[i]
+// }
+
+// console.log("final ans:", arr)
