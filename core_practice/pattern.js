@@ -507,3 +507,31 @@
 // }
 
 // console.log("final ans:", arr)
+
+//   let arr1 = [1,34,67,4,44]
+//   let arr2 = [ 1,2,3,4,5,6]
+
+// let merged = [...arr1 , ...arr2].sort((a,b)=> a - b)
+// console.log(merged)
+
+let arr = [7,1,5,3,6,4]
+
+let minPrice = arr[0]   
+let maxProfit = 0       
+
+for (let i = 0; i < arr.length; i++) {
+
+  
+  if (arr[i] < minPrice) {
+    minPrice = arr[i]
+  }
+
+
+  let profit = arr[i] - minPrice
+
+  if (profit > maxProfit) {
+    maxProfit = profit
+  }
+}
+
+console.log("Max Profit:", maxProfit)
