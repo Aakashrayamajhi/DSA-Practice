@@ -514,24 +514,67 @@
 // let merged = [...arr1 , ...arr2].sort((a,b)=> a - b)
 // console.log(merged)
 
-let arr = [7,1,5,3,6,4]
+// let arr = [7,1,5,3,6,4]
 
-let minPrice = arr[0]   
-let maxProfit = 0       
+// let minPrice = arr[0]   
+// let maxProfit = 0       
 
-for (let i = 0; i < arr.length; i++) {
-
-  
-  if (arr[i] < minPrice) {
-    minPrice = arr[i]
-  }
+// for (let i = 0; i < arr.length; i++) {
 
 
-  let profit = arr[i] - minPrice
+//   if (arr[i] < minPrice) {
+//     minPrice = arr[i]
+//   }
 
-  if (profit > maxProfit) {
-    maxProfit = profit
+
+//   let profit = arr[i] - minPrice
+
+//   if (profit > maxProfit) {
+//     maxProfit = profit
+//   }
+// }
+
+// console.log("Max Profit:", maxProfit)
+
+// let names = ["Aakash", "Rayamajhi", "Jung"];
+// let heights = [10, 1, 9];
+// let temp = []
+
+// for (let i = 0; i < names.length; i++) {
+//   temp.push({
+//     name: names[i],
+//     height: heights[i]
+//   })
+// }
+
+// temp.sort((a, b) => b.height - a.height)
+// let name = temp.map(obj => obj.name)
+
+// console.log(name)
+let nums = [2, 0, 2, 1, 1, 0];
+
+
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] !== 0) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[j] === 0) {
+        [nums[i], nums[j]] = [nums[j], nums[i]];
+        break;
+      }
+    }
   }
 }
 
-console.log("Max Profit:", maxProfit)
+
+for (let i = nums.length - 1; i >= 0; i--) {
+  if (nums[i] !== 2) {
+    for (let j = i - 1; j >= 0; j--) {
+      if (nums[j] === 2) {
+        [nums[i], nums[j]] = [nums[j], nums[i]];
+        break;
+      }
+    }
+  }
+}
+
+console.log(nums);
