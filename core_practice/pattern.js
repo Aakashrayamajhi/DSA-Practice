@@ -551,30 +551,90 @@
 // let name = temp.map(obj => obj.name)
 
 // console.log(name)
-let nums = [2, 0, 2, 1, 1, 0];
+// let nums = [2, 0, 2, 1, 1, 0];
 
 
-for (let i = 0; i < nums.length; i++) {
-  if (nums[i] !== 0) {
-    for (let j = i + 1; j < nums.length; j++) {
-      if (nums[j] === 0) {
-        [nums[i], nums[j]] = [nums[j], nums[i]];
-        break;
-      }
+// for (let i = 0; i < nums.length; i++) {
+//   if (nums[i] !== 0) {
+//     for (let j = i + 1; j < nums.length; j++) {
+//       if (nums[j] === 0) {
+//         [nums[i], nums[j]] = [nums[j], nums[i]];
+//         break;
+//       }
+//     }
+//   }
+// }
+
+
+// for (let i = nums.length - 1; i >= 0; i--) {
+//   if (nums[i] !== 2) {
+//     for (let j = i - 1; j >= 0; j--) {
+//       if (nums[j] === 2) {
+//         [nums[i], nums[j]] = [nums[j], nums[i]];
+//         break;
+//       }
+//     }
+//   }
+// }
+
+// console.log(nums);
+
+// let nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+// let max = -Infinity
+// let sum = 0
+
+// for (let i = 0; i < nums.length; i++) {
+
+//   sum +=nums[i]
+//   if(max < sum){
+//       max = sum
+//   }
+
+//   if(sum < 0){
+//     sum = 0
+//   }
+// }
+
+// console.log(max)
+
+var majorityElement = function(nums) {
+    
+    let temp =[]
+for(let i = 0 ; i<nums.length ; i++){
+    let count = 0 ;
+    for(let j = i ; j<nums.length ; j++){
+        if(nums[i] == nums[j]){
+            count ++
+        }
     }
-  }
+    temp.push({
+        value : nums[i],
+        count : count
+    })
 }
 
-
-for (let i = nums.length - 1; i >= 0; i--) {
-  if (nums[i] !== 2) {
-    for (let j = i - 1; j >= 0; j--) {
-      if (nums[j] === 2) {
-        [nums[i], nums[j]] = [nums[j], nums[i]];
-        break;
-      }
+for(let i = 0 ; i <temp.length ; i++){
+    if(temp[i].count > (nums.length / 2)){
+        return temp[i].value
     }
-  }
 }
+};
 
-console.log(nums);
+var majorityElement = function(nums) {
+    let ans = null;
+    let count = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+        if (count === 0) {
+            ans = nums[i];
+        }
+
+        if (nums[i] === ans) {
+            count++;
+        } else {
+            count--;
+        }
+    }
+
+    return ans;
+};
