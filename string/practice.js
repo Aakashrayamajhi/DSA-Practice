@@ -35,3 +35,48 @@
 //     rev = rev.concat(s[i])
 // }
 // console.log(rev)
+
+// let a = "AaKaSh"
+// let toggle = ""
+// for(let i = 0 ; i<a.length ; i++){
+//     if(a[i] == a[i].toUpperCase()){
+//         toggle += a[i].toLowerCase()
+//     } else {
+//         toggle += a[i].toUpperCase()
+//     }
+// }
+// console.log(toggle)
+
+// let s = "aakash"
+// let freq = {}
+
+// for (let ch of s) {
+//   freq[ch] = (freq[ch] || 0) + 1
+// }
+
+// console.log(freq)
+
+// let arr = [10, 1, 3, 4, 12, 5]
+
+// for (let j = 0; j < arr.length; j++) {
+//   for (let i = 0; i < arr.length - j - 1; i++) {
+//     if (arr[i] > arr[i + 1]) {
+//       let temp = arr[i];
+//       arr[i] = arr[i + 1]
+//       arr[i + 1] = temp
+//     }
+//   }
+// }
+
+
+var sortableIntegers = function(nums) {
+    let temp = []
+for(let i = 0 ; i<nums.length ; i++){
+  let sum = nums[i] / nums.length
+  if(Number.isInteger(sum)){
+ temp.push(nums[i])
+} 
+}
+    return temp
+};
+sortableIntegers([3,1,2])

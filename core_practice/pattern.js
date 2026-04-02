@@ -597,44 +597,72 @@
 
 // console.log(max)
 
-var majorityElement = function(nums) {
-    
-    let temp =[]
-for(let i = 0 ; i<nums.length ; i++){
-    let count = 0 ;
-    for(let j = i ; j<nums.length ; j++){
-        if(nums[i] == nums[j]){
-            count ++
-        }
-    }
-    temp.push({
-        value : nums[i],
-        count : count
-    })
-}
+// var majorityElement = function(nums) {
 
-for(let i = 0 ; i <temp.length ; i++){
-    if(temp[i].count > (nums.length / 2)){
-        return temp[i].value
-    }
-}
-};
+//     let temp =[]
+// for(let i = 0 ; i<nums.length ; i++){
+//     let count = 0 ;
+//     for(let j = i ; j<nums.length ; j++){
+//         if(nums[i] == nums[j]){
+//             count ++
+//         }
+//     }
+//     temp.push({
+//         value : nums[i],
+//         count : count
+//     })
+// }
 
-var majorityElement = function(nums) {
-    let ans = null;
-    let count = 0;
+// for(let i = 0 ; i <temp.length ; i++){
+//     if(temp[i].count > (nums.length / 2)){
+//         return temp[i].value
+//     }
+// }
+// };
 
-    for (let i = 0; i < nums.length; i++) {
-        if (count === 0) {
-            ans = nums[i];
-        }
+// var majorityElement = function(nums) {
+//     let ans = null;
+//     let count = 0;
 
-        if (nums[i] === ans) {
-            count++;
-        } else {
-            count--;
-        }
-    }
+//     for (let i = 0; i < nums.length; i++) {
+//         if (count === 0) {
+//             ans = nums[i];
+//         }
 
-    return ans;
-};
+//         if (nums[i] === ans) {
+//             count++;
+//         } else {
+//             count--;
+//         }
+//     }
+
+//     return ans;
+// };
+
+
+// let nums = [-1, 0, 1, 2, -1, -4]
+// let temp = []
+// let check = nums[0]
+
+// for (let i = 0; i < nums.length; i++) {
+//     if (check != nums[i]) {
+//         for (let j = i; j < nums.length; j++) {
+//             if (check != nums[j]) {
+//                 for (let k = j; k < nums.length; k++) {
+//                     if(nums[i] ){
+
+//                     }
+//                     let sum = nums[i] + nums[j] + nums[k]
+//                     if (sum == 0) {
+//                         temp.push([nums[i], nums[j], nums[k]])
+//                     }
+//                 }
+//             }
+
+//         }
+//     }
+
+// }
+
+// console.log(temp)
+
