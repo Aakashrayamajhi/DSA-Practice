@@ -69,14 +69,35 @@
 // }
 
 
-var sortableIntegers = function(nums) {
-    let temp = []
-for(let i = 0 ; i<nums.length ; i++){
-  let sum = nums[i] / nums.length
-  if(Number.isInteger(sum)){
- temp.push(nums[i])
-} 
-}
-    return temp
-};
-sortableIntegers([3,1,2])
+// let arr = [10, 12, 11, 5, 1, 20]
+
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//         if (arr[i] > arr[j]) {
+//             let temp = arr[i]
+//             arr[i] = arr[j]
+//             arr[j] = temp
+//         }
+//     }
+// }
+// console.log(arr)
+
+// let arr = [10, 12, 11, 5, 1, 20]
+
+// for (let i = 0; i < arr.length; i++) {
+//     let min = arr[i]
+//     let index = i  
+
+//     for (let j = i + 1; j < arr.length; j++) {
+//         if (min > arr[j]) {
+//             min = arr[j]
+//             index = j
+//         }
+//     }
+
+//     let temp = arr[i]
+//     arr[i] = min
+//     arr[index] = temp
+// }
+
+// console.log(arr)
