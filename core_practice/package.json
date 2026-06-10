@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "dotenv": "^17.4.2",
+    "ethers": "^6.16.0",
+    "express": "^5.2.1",
     "prompt-sync": "^4.2.0"
   }
 }
