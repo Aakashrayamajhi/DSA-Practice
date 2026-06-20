@@ -41,4 +41,8 @@ function findValue(map) {
 }
 console.log(findValue(map))
 
+console.log("changing the value of map using get method")
+
+
+
 console.log(map)
