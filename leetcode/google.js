@@ -12,7 +12,8 @@ const superegg = (n , f)=>{
   let moves = 0
   let covered = 0
   let prev = 0
-while(covered < n){
+  
+  while(covered < n){
     moves++
     prev = covered
     covered += moves
