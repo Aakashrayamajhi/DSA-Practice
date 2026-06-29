@@ -50,3 +50,59 @@
 #         sum += i
 #     print(sum)
 # sum([1,2,3,4,5])
+
+# find max number without using built in funciton 
+
+# def max(arr):
+#     max = 0
+#     for i in arr:
+#         if(i > max):
+#             max = i
+#     print(max)
+# max([1,2,3,4,5])
+
+# counting vowels 
+
+# def countvowels(s):
+#     vowels = ['a', 'e' , 'i' , 'o' , 'u']
+#     counter = 0
+#     for i in s:
+#        if i in vowels:
+#         counter += 1
+
+#     print(counter)
+# countvowels("hello worlds")
+ 
+
+#  # largest of two number 
+
+# def max(a , b):
+#     max = a
+#     if( max < b):
+#         max = b
+#     print(max)
+# max(10,20)
+
+# # finding even and odd in an array 
+
+# def find(arr):
+#     result = []
+#     for i in arr:
+#         if( i % 2 == 0):
+#             result.append("even")
+#         else:
+#             result.append("odd")
+#     print(result)
+# find([1,2,3,4,5])
+
+# using -->  hash map in python
+
+# def frequency(arr):
+#     map = {}
+    
+#     for i in arr:
+#         map[i] = map.get(i , 0) + 1
+    
+#     print(map)
+
+# frequency([1,2,1," ",1,2," ",1]) 
