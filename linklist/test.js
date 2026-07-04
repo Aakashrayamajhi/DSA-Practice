@@ -77,11 +77,11 @@ class LinkList {
 
     deleteAtPosition(position) {
         if (this.head === null) return
-
         if (position === 0) {
             this.head = this.head.next
-            return
+            returna
         }
+
 
         let current = this.head
         let count = 0

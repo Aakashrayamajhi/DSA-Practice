@@ -106,3 +106,47 @@
 #     print(map)
 
 # frequency([1,2,1," ",1,2," ",1]) 
+
+# removing duplicate element from the array
+
+def dup(arr , target):
+   left = 0
+   right = len(arr) - 1
+   possibleway = 0
+
+   while left < right:
+    s = arr[left] + arr[right]
+
+    if s == target:
+        possibleway += 1
+        left +=1
+        right -= 1
+    elif s < target:
+        left +=1
+    else:
+        right -= 1
+
+   return possibleway  
+
+print(dup([1,2,2,1,1,2,43,4] , 4))
+
+def all_pairs(arr, target):
+    seen = {}
+    pairs = []
+
+    for i, num in enumerate(arr):
+        diff = target - num
+
+        if diff in seen:
+            for j in seen[diff]:
+                pairs.append((j, i))   # index pair
+
+        if num in seen:
+            seen[num].append(i)
+        else:
+            seen[num] = [i]
+
+    return pairs
+
+
+print(all_pairs([1,2,2,1,1,2,43,4], 4))
