@@ -1,18 +1,17 @@
-/**
- * @param {string} s
- * @return {boolean}
- */
-var isPalindrome = function(s) {
+// let str = "asfhks f\'[]23-040 jsdnfjkas ihf "
+// let result = str.replace(/[^a-zA-Z0-9 ]/g, "")
+// console.log(result)
 
-  let str = s.toLowerCase().replace(/[^a-zA-Z0-9]/g, "")
+let arr = [1, 2, 3, 4, 5]
+let k = 2
+while (k > 0) {
+    let last = arr[arr.length - 1]
+    for (let i = arr.length - 1; i >= 0; i--) {
 
-  let i = 0
-  let j = str.length - 1
+arr[i] = arr[i-1]
 
-  while(i < j){
-    if(str[i] !== str[j]) return false
-
-    i++
-    j--
-  } return true
-};
+    }
+    arr[0] = last
+    k--
+}
+console.log(arr)
