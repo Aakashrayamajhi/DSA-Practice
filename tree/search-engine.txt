@@ -1,0 +1,193 @@
+search-engine/
+│
+├── services/                # Main microservices
+│   ├── api-gateway/        # Entry point (user request handle)
+│   ├── search-service/     # Query processing + ranking
+│   ├── crawler-service/    # Web crawling
+│   ├── indexer-service/    # Data processing + indexing
+│   ├── ranking-service/    # Ranking logic (ML / scoring)
+│   └── ingestion-service/  # Data pipeline (queue consumer)
+│
+├── core/                   # Shared logic
+│   ├── tokenizer/         # Text processing
+│   ├── parser/            # HTML parsing
+│   ├── index/             # Inverted index logic
+│   ├── ranking/           # Ranking algorithms
+│   └── utils/             # Common helpers
+│
+├── infra/                  # Infrastructure configs
+│   ├── docker/            # Dockerfiles
+│   ├── k8s/               # Kubernetes configs
+│   ├── terraform/         # Infra as code
+│   └── nginx/             # Load balancer config
+│
+├── data/                   # Data storage (local dev)
+│   ├── raw/               # Crawled pages
+│   ├── processed/         # Cleaned data
+│   └── index/             # Index files
+│
+├── queue/                  # Message queue configs
+│   ├── kafka/             # Kafka topics config
+│   └── consumers/         # Queue consumers
+│
+├── cache/                  # Cache layer
+│   └── redis/             # Redis config
+│
+├── db/                     # Database schemas
+│   ├── metadata/          # Page metadata
+│   └── logs/              # Search logs
+│
+├── scripts/                # Utility scripts
+│   ├── start.sh
+│   ├── crawl_seed.py
+│   └── reindex.py
+│
+├── tests/                  # Testing
+│   ├── unit/
+│   └── integration/
+│
+├── configs/                # App configs
+│   ├── dev.yaml
+│   ├── prod.yaml
+│   └── logging.yaml
+│
+├── docs/                   # Documentation
+│   ├── architecture.md
+│   └── api.md
+│
+└── README.md
+
+
+api-gateway/
+├── src/
+│   ├── routes/
+│   │   └── search.route.ts
+│   ├── controllers/
+│   │   └── gateway.controller.ts
+│   ├── middlewares/
+│   │   ├── auth.middleware.ts
+│   │   ├── rateLimiter.ts
+│   │   └── logging.middleware.ts
+│   ├── services/
+│   │   └── proxy.service.ts   # forward to search-service
+│   ├── clients/
+│   │   └── search.client.ts
+│   └── app.ts
+├── configs/
+├── Dockerfile
+└── README.md
+
+
+search-service/
+├── src/
+│   ├── controllers/
+│   │   └── search.controller.ts
+│   ├── services/
+│   │   ├── search.service.ts
+│   │   ├── query.service.ts
+│   │   └── ranking.service.ts
+│   ├── repositories/
+│   │   ├── index.repo.ts
+│   │   └── cache.repo.ts
+│   ├── clients/
+│   │   ├── elastic.client.ts
+│   │   └── redis.client.ts
+│   ├── models/
+│   └── app.ts
+├── configs/
+└── Dockerfile
+
+crawler-service/
+├── src/
+│   ├── workers/
+│   │   └── crawler.worker.ts
+│   ├── services/
+│   │   ├── crawl.service.ts
+│   │   └── url.service.ts
+│   ├── queue/
+│   │   └── producer.ts
+│   ├── parsers/
+│   │   └── html.parser.ts
+│   ├── utils/
+│   │   └── robots.ts
+│   └── app.ts
+├── configs/
+└── Dockerfile
+
+indexer-service/
+├── src/
+│   ├── consumers/
+│   │   └── crawl.consumer.ts   
+│   ├── services/
+│   │   ├── index.service.ts
+│   │   ├── tokenize.service.ts
+│   │   └── normalize.service.ts
+│   ├── repositories/
+│   │   └── index.repo.ts
+│   ├── clients/
+│   │   └── elastic.client.ts
+│   └── app.ts
+├── configs/
+└── Dockerfile
+
+ranking-service/
+├── src/
+│   ├── services/
+│   │   ├── ranking.service.ts
+│   │   ├── scoring.service.ts
+│   │   └── features.service.ts
+│   ├── models/
+│   │   └── ranking.model.ts
+│   ├── utils/
+│   │   └── math.ts
+│   └── app.ts
+├── configs/
+└── Dockerfile
+
+
+ingestion-service/
+├── src/
+│   ├── consumers/
+│   │   ├── crawl.consumer.ts
+│   │   └── log.consumer.ts
+│   ├── services/
+│   │   ├── process.service.ts
+│   │   └── validate.service.ts
+│   ├── repositories/
+│   │   └── storage.repo.ts
+│   └── app.ts
+├── configs/
+└── Dockerfile
+
+core/
+├── tokenizer/
+│   └── tokenizer.ts
+├── parser/
+│   └── html.parser.ts
+├── index/
+│   └── invertedIndex.ts
+├── ranking/
+│   └── bm25.ts
+└── utils/
+    └── logger.ts
+
+queue/
+├── kafka/
+│   ├── topics.ts
+│   └── producer.ts
+├── consumers/
+│   └── base.consumer.ts
+
+cache/
+└── redis/
+    ├── redis.client.ts
+    └── cache.service.ts
+
+db/
+├── metadata/
+│   └── page.schema.sql
+└── logs/
+    └── search_logs.sql
+
+
+
